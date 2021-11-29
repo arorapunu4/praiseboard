@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mytv/colors.dart';
-import 'package:mytv/firebase.dart';
-import 'package:mytv/images.dart';
-import 'package:mytv/screens/loginScreen.dart';
-import 'package:splashscreen/splashscreen.dart';
-import 'package:mytv/responsiveness.dart';
-import 'package:custom_splash/custom_splash.dart';
+import 'package:praiseboard/colors.dart';
+import 'package:praiseboard/firebase.dart';
+import 'package:praiseboard/images.dart';
+import 'package:praiseboard/screens/loginScreen.dart';
+import 'package:praiseboard/responsiveness.dart';
+
+import 'custom_splash.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,6 +14,7 @@ void main() async {
 
   runApp(MaterialApp(
     home: MyApp(),
+    theme: ThemeData(fontFamily: 'AdventSans'),
   ));
 }
 
@@ -59,10 +60,10 @@ class _MyAppState extends State<MyApp> {
      // backGroundColor: Colors.blue,
        backGroundColor: Color(0xff2a33ff),
       animationEffect: 'zoom-in',
-      logoSize: 50,
+      logoSize: 60,
       home: Login(),
       customFunction: duringSplash,
-      duration: 2000,
+      duration: 0,
       type: CustomSplashType.StaticDuration,
       outputAndHome: op,
     );

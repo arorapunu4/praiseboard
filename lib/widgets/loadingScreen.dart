@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mytv/colors.dart';
-import 'package:mytv/responsiveness.dart';
+import 'package:praiseboard/colors.dart';
+import 'package:praiseboard/responsiveness.dart';
 
 class Loading extends StatelessWidget {
   @override

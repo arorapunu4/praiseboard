@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mytv/screens/dashboard.dart';
-import 'package:mytv/screens/loginScreen.dart';
+import 'package:praiseboard/screens/dashboard.dart';
+import 'package:praiseboard/screens/loginScreen.dart';
 
 class Routes {
   Routes._();

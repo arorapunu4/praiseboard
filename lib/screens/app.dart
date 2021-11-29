@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mytv/navigation.dart';
-import 'package:mytv/responsiveness.dart';
-import 'package:mytv/routes.dart';
+import 'package:praiseboard/navigation.dart';
+import 'package:praiseboard/responsiveness.dart';
+import 'package:praiseboard/routes.dart';
 
 
 

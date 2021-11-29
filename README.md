@@ -1,4 +1,4 @@
-# mytv
+# praiseboard
 
 A new Flutter project.
 

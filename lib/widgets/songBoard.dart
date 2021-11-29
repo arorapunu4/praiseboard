@@ -1,10 +1,10 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:mytv/colors.dart';
-import 'package:mytv/images.dart';
-import 'package:mytv/models/boardModel.dart';
-import 'package:mytv/responsiveness.dart';
+import 'package:praiseboard/colors.dart';
+import 'package:praiseboard/images.dart';
+import 'package:praiseboard/models/boardModel.dart';
+import 'package:praiseboard/responsiveness.dart';
 
 class HexColor extends Color {
   static int _getColorFromHex(String hexColor) {
@@ -63,7 +63,7 @@ class _SongBoardState extends State<SongBoard> {
                             widget.textData[index].key,
                             textAlign: TextAlign.center,
                             style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.normal,
                                 fontSize: 50.f,
                                 color: AppColors.heading1),
                           );
@@ -72,7 +72,7 @@ class _SongBoardState extends State<SongBoard> {
                             widget.textData[index].key,
                             textAlign: TextAlign.center,
                             style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.normal,
                                 fontSize: 80.f,
                                 color: AppColors.heading1),
                           );

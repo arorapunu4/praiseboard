@@ -1,10 +1,8 @@
-
-
 import 'package:flutter/material.dart';
-import 'package:mytv/colors.dart';
-import 'package:mytv/images.dart';
-import 'package:mytv/models/boardModel.dart';
-import 'package:mytv/responsiveness.dart';
+import 'package:praiseboard/colors.dart';
+import 'package:praiseboard/images.dart';
+import 'package:praiseboard/models/boardModel.dart';
+import 'package:praiseboard/responsiveness.dart';
 
 class HexColor extends Color {
   static int _getColorFromHex(String hexColor) {
@@ -49,33 +47,43 @@ class _BillBoardScreenState extends State<BillBoardScreen> {
           height: 100,
           color: Colors.white,
           child: Padding(
-            padding: EdgeInsets.fromLTRB(200.w, 100.w, 200.w, 100.w),
+            padding: EdgeInsets.fromLTRB(150.w, 100.w, 150.w, 100.w),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   widget.textData[0].key,
                   style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 100.f,
-                      color: AppColors.heading1),
-                ),
-                Text(
-                  widget.textData[1].key,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 80.f,
-                      color: AppColors.heading1),
-                ),
-                Text(
-                  widget.textData[2].key,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
                       fontWeight: FontWeight.normal,
-                      fontSize: 60.f,
+                      fontSize: 120.f,
                       color: AppColors.heading1),
-                )
+                ),
+                (widget.textData.length>1)
+                    ? Padding(
+                      padding: const EdgeInsets.all(30.0),
+                      child: Text(
+                          widget.textData[1].key,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontWeight: FontWeight.normal,
+                              fontSize: 80.f,
+                              color: AppColors.heading1),
+                        ),
+                    )
+                    : Text(""),
+                (widget.textData.length>2)
+                    ? Padding(
+                      padding: const EdgeInsets.all(30.0),
+                      child: Text(
+                          widget.textData[2].key,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontWeight: FontWeight.normal,
+                              fontSize: 60.f,
+                              color: AppColors.heading1),
+                        ),
+                    )
+                    : Text(""),
               ],
             ),
           )),

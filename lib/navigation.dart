@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:mytv/routes.dart';
+import 'package:praiseboard/routes.dart';
 
 ///  [Navigation] is common place for Navigation utils.
 ///  This includes push, pop, pushNamed methods from Navigator.of(context).

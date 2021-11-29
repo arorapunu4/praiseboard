@@ -3,13 +3,13 @@ import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:mytv/models/boardModel.dart';
-import 'package:mytv/services/boardservice.dart';
-import 'package:mytv/widgets/billBoardScreen.dart';
-import 'package:mytv/widgets/errorScreen.dart';
-import 'package:mytv/widgets/loadingScreen.dart';
-import 'package:mytv/widgets/noticeBoardScreen.dart';
-import 'package:mytv/widgets/songBoard.dart';
+import 'package:praiseboard/models/boardModel.dart';
+import 'package:praiseboard/services/boardservice.dart';
+import 'package:praiseboard/widgets/billBoardScreen.dart';
+import 'package:praiseboard/widgets/errorScreen.dart';
+import 'package:praiseboard/widgets/loadingScreen.dart';
+import 'package:praiseboard/widgets/noticeBoardScreen.dart';
+import 'package:praiseboard/widgets/songBoard.dart';
 import 'package:pretty_json/pretty_json.dart';
 
 class DashboardContainer extends StatefulWidget {
@@ -32,6 +32,7 @@ class _DashboardContainerState extends State<DashboardContainer> {
   Widget build(BuildContext context) {
     _instance = FirebaseFirestore.instance;
     CollectionReference categories = _instance.collection('praiseboard');
+    print(categories);
 
     return new StreamBuilder(
         stream: categories.doc(widget.code).snapshots(),
@@ -40,6 +41,10 @@ class _DashboardContainerState extends State<DashboardContainer> {
             return Loading();
           }
           if (!snapshot.hasData || !snapshot.data.exists) {
+                   print("error-1");
+                   print(snapshot);
+            print(snapshot.hasData);
+            print(snapshot.data.exists);
             return ErrorScreen();
           }
           if (snapshot.hasData) {
@@ -63,7 +68,10 @@ class _DashboardContainerState extends State<DashboardContainer> {
             }
           }
 
-          if (snapshot.hasError) {}
+          if (snapshot.hasError) {
+             print("error");
+            print(snapshot.hasError);
+          }
 
           return ErrorScreen();
         });

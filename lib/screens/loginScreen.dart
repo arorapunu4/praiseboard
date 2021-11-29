@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:mytv/colors.dart';
-import 'package:mytv/images.dart';
-import 'package:mytv/navigation.dart';
-import 'package:mytv/responsiveness.dart';
-import 'package:mytv/routes.dart';
-import 'package:mytv/screens/dashboard.dart';
-import 'package:mytv/widgets/enterCode.dart';
-import 'package:mytv/widgets/primaryBtn.dart';
+import 'package:praiseboard/colors.dart';
+import 'package:praiseboard/images.dart';
+import 'package:praiseboard/navigation.dart';
+import 'package:praiseboard/responsiveness.dart';
+import 'package:praiseboard/routes.dart';
+import 'package:praiseboard/screens/dashboard.dart';
+import 'package:praiseboard/widgets/enterCode.dart';
+import 'package:praiseboard/widgets/primaryBtn.dart';
 
 class Login extends StatefulWidget {
   @override

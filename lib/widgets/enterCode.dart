@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mytv/colors.dart';
-import 'package:mytv/responsiveness.dart';
-import 'package:mytv/widgets/primaryBtn.dart';
-import 'package:mytv/widgets/text_form_field.dart';
+import 'package:praiseboard/colors.dart';
+import 'package:praiseboard/responsiveness.dart';
+import 'package:praiseboard/widgets/primaryBtn.dart';
+import 'package:praiseboard/widgets/text_form_field.dart';
 
 class EnterCode extends StatefulWidget {
   @override

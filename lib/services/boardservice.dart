@@ -1,7 +1,7 @@
 // import 'package:cloud_firestore/cloud_firestore.dart';
 
-// import 'package:mytv/firebase.dart';
-// import 'package:mytv/models/boardModel.dart';
+// import 'package:praiseboard/firebase.dart';
+// import 'package:praiseboard/models/boardModel.dart';
 // import 'package:pretty_json/pretty_json.dart';
 
 
